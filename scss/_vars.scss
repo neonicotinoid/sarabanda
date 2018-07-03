@@ -1,0 +1,12 @@
+$default-font: "Raleway", sans-serif;
+
+$accent-blue: rgb(56, 133, 229);
+$accent-dark-blue: rgb(33, 80, 138);
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 20px;
+$grid-columns: 20;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
