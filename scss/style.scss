@@ -168,30 +168,34 @@ body {
 }
 
 .hs-title {
-  margin-top: 25rem;
+  position: relative;
+  top: calc(30vh - 50px);
   font-size: 4.8rem;
   font-weight: 600;
   text-align: center;
   @include media-breakpoint-down(md) {
-    margin-top: 15rem;
+    top: calc(30vh - 50px);
   }
   @include media-breakpoint-down(sm) {
-    margin-top: 10rem;
+    top: calc(30vh - 50px);
   }
 }
 
 .hs-subtitle {
-  margin-top: 2rem;
+  position: relative;
+  top: calc(30vh - 40px);
   font-size: 1.8rem;
   line-height: 1.45;
   text-align: center;
 }
 
 .search-wrapper {
+  position: relative;
+  top: calc(30vh - 10px);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 4rem auto 0 auto;
+  margin: 0 auto 0 auto;
   padding: 0 15px;
   @include media-breakpoint-down(xs) {
     flex-direction: column;
@@ -731,7 +735,8 @@ body {
 }
 
 .subscribe-email {
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   background-color: rgb(255, 255, 255);
   border: solid 1px rgb(212, 217, 222);
   padding: 1.5rem;
@@ -743,6 +748,7 @@ body {
   color: rgb(157, 159, 162);
   width: 520px;
   max-width: 100%;
+  box-sizing: border-box;
   transition: border .2s ease-in-out; 
   &:focus {
     border: solid 1px $accent-blue;
@@ -752,8 +758,8 @@ body {
 
 .subscribe-submit {
   position: relative;
-  left: -5px;
-  padding: 1.5rem 3rem;
+  left: -7px;
+  padding: 1.4rem 3rem;
   border-radius: 5px;
   background-color: $accent-blue;
   border: none;
