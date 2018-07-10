@@ -428,7 +428,7 @@ body {
   align-items: stretch;
   position: relative;
   @include media-breakpoint-down(md) {
-    flex-direction: column;
+    display: block;
   }
 }
 
@@ -491,8 +491,7 @@ body {
   @include media-breakpoint-down(md) {
     width: 100%;
   }
-  video {
-    object-fit: cover;
+  iframe {
     vertical-align: bottom;
   }
 }
@@ -670,6 +669,7 @@ body {
     letter-spacing: 0.2px;
     text-align: left;
     color: rgb(255, 255, 255);
+    max-width: 100%;
   }
   &__authorwrap {
     display: flex;
@@ -739,7 +739,7 @@ body {
   border-bottom-left-radius: 5px;
   background-color: rgb(255, 255, 255);
   border: solid 1px rgb(212, 217, 222);
-  padding: 1.5rem;
+  padding: 1.3rem 1.5rem;
   font-family: 'Raleway', sans-serif;
   font-size: 1.8rem;
   line-height: 1;
