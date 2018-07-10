@@ -23,10 +23,10 @@ var paths = {
         img: 'img/**/*.*',
     },
     dist: {
-        html: './build/',
-        css: './build/css/',
-        js: './build/js/',
-        img: './build/img/',
+        html: './docs/',
+        css: './docs/css/',
+        js: './docs/js/',
+        img: './docs/img/',
     }
 }
 
